@@ -37,23 +37,23 @@ export default {
     }
   },
   methods: {
-    handleSubmit:function() {
-      this.$http.get("/api/free/getAllUserInfo")
-        .then(res=>{
+    handleSubmit: function () {
+      this.$http.get('/api/free/getAllUserInfo')
+        .then(res => {
           console.log(res)
         })
         .catch((res) => {
           console.log(res)
         })
     }
-      /*this.$refs[name].validate((valid) => {
-        if (valid) {
+    /* this.$refs[name].validate((valid) => {
+       if (valid) {
           this.$Message.success('Success!')
           } else {
             this.$Message.error('Fail!')
           }
         })
-      }*/
-    }
+      } */
   }
+}
 </script>
